@@ -1,5 +1,7 @@
 # Base de Datos HospitalIntegrador 🏥
 
+Por: Jimenez Serrano & Bonilla Ojeda
+
 Este repositorio contiene el script SQL para la creación y el poblado de la base de datos **HospitalIntegrador**, diseñada como un proyecto integrador para modelar el funcionamiento básico de un sistema hospitalario.
 
 La base de datos permite gestionar pacientes, médicos, departamentos, citas médicas, tratamientos, medicamentos, habitaciones y prescripciones, manteniendo integridad referencial entre todas las entidades.
@@ -146,5 +148,29 @@ Tabla intermedia que implementa una relación **muchos a muchos** entre citas y 
   - Médicos → Citas
   - Citas → Tratamientos
 
+---
 
+## ⚡ Ejecución del Script
+
+  - Puede ejecutarse completamente en una sola ejecución
+  - No requiere archivos adicionales
+  - Poblado inicial con datos realistas
+  - Más de 100 registros
+  - Permite pruebas sin carga manual adicional
+
+---
+
+## 🗺️ Diagramas Relacionales
+
+### 🔶 Diagrama relacional
+
+  - DEPARTAMENTOS 1 ────────< N MEDICOS
+  - MEDICOS       1 ────────< N CITAS
+  - PACIENTES     1 ────────< N CITAS
+  - CITAS         1 ────────< N TRATAMIENTOS
+  - CITAS         N ────────< PRESCRIPCIONES >─────── N MEDICAMENTOS
+
+### 🔷 Diagrama Entidad Relacion Extendido
+
+<img width="970" height="688" alt="Screenshot 2026-01-05 223410" src="https://github.com/user-attachments/assets/d69845fe-e5f8-4a42-86e4-80f74913e642" />
 
